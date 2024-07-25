@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Teachers" ,sans-serif;
+    overflow: hidden;
+}
+.container{
+    height: 100vh;
+    width: 100vw;
+    background: white;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 25% 55% 20%;
+
+}
+header
+main
+footer
+aside{
+    padding: 2vw;
+}
+
+aside{
+    grid-column: 2;
+    grid-row: 1/-1;
+    padding-right: 3vw;
+
+}
+
+aside video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+
+}
+@media screen and (max-width:680px){
+    .container{
+        grid-template-columns: 100%;
+        grid-template-rows: 25% 30% 15% 30%;
+    }
+    aside{
+        grid-row: 4;
+        grid-column: 1;
+        padding: 0%;
+        background-position: center;
+    }
+}
